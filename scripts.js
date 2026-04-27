@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const sidebarToggle = document.getElementById('sidebarToggle');
             sidebar.classList.add('collapsed');
             const arrow = sidebarToggle.querySelector('.arrow-icon');
-            if (arrow) arrow.textContent = 'â˜°';
+            if (arrow) arrow.textContent = '☰';
 
             // Initialize the app
             setTimeout(() => {
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const sidebarToggle = document.getElementById('sidebarToggle');
             sidebar.classList.add('collapsed');
             const arrow = sidebarToggle.querySelector('.arrow-icon');
-            if (arrow) arrow.textContent = 'â˜°';
+            if (arrow) arrow.textContent = '☰';
 
             setTimeout(() => {
                 startupOverlay.style.display = 'none';
@@ -193,10 +193,10 @@ function createRemoteControl() {
     // Update the remote control layout to use grid positioning
     remoteControl.innerHTML = `
         <div class="remote-buttons">
-            <button class="remote-btn" data-action="up" title="Previous Channel">â–²</button>
-            <button class="remote-btn" data-action="left" title="Toggle Sidebar">â—€</button>
-            <button class="remote-btn" data-action="right" title="Show Guide">â–¶</button>
-            <button class="remote-btn" data-action="down" title="Next Channel">â–¼</button>
+            <button class="remote-btn" data-action="up" title="Previous Channel">▲</button>
+            <button class="remote-btn" data-action="left" title="Toggle Sidebar">◀</button>
+            <button class="remote-btn" data-action="right" title="Show Guide">▶</button>
+            <button class="remote-btn" data-action="down" title="Next Channel">▼</button>
         </div>
         <div class="number-pad">
             <button class="num-btn" data-num="1">1</button>
@@ -219,15 +219,15 @@ function createRemoteControl() {
     keyboardGuide.innerHTML = `
         <h3>Keyboard Controls</h3>
         <div class="key-item">
-            <span>â†‘ / â†“</span>
+            <span>↑ / ↓</span>
             <span>Navigate channels</span>
         </div>
         <div class="key-item">
-            <span>â†</span>
+            <span>←</span>
             <span>Toggle channel list</span>
         </div>
         <div class="key-item">
-            <span>â†’</span>
+            <span>→</span>
             <span>Show this guide</span>
         </div>
         <div class="key-item">
@@ -302,7 +302,7 @@ function handleRemoteAction(action) {
         case 'left':
             sidebar.classList.toggle('collapsed');
             const arrow = document.querySelector('#sidebarToggle .arrow-icon');
-            if (arrow) arrow.textContent = sidebar.classList.contains('collapsed') ? 'â˜°' : 'âœ•';
+            if (arrow) arrow.textContent = sidebar.classList.contains('collapsed') ? '☰' : '✕';
             break;
         case 'right':
             toggleKeyboardGuide();
@@ -488,7 +488,7 @@ function handleKeyboardEvents(e) {
             e.preventDefault();
             sidebar.classList.toggle('collapsed');
             const arrow = document.querySelector('#sidebarToggle .arrow-icon');
-            if (arrow) arrow.textContent = sidebar.classList.contains('collapsed') ? 'â˜°' : 'âœ•';
+            if (arrow) arrow.textContent = sidebar.classList.contains('collapsed') ? '☰' : '✕';
             break;
         case 'ArrowRight':
             e.preventDefault();
@@ -503,7 +503,7 @@ function handleKeyboardEvents(e) {
                 if (!sidebar.classList.contains('collapsed')) {
                     sidebar.classList.add('collapsed');
                     const arrow = document.querySelector('#sidebarToggle .arrow-icon');
-                    if (arrow) arrow.textContent = 'â˜°';
+                    if (arrow) arrow.textContent = '☰';
                 }
             } else {
                 // Fallback - play first visible channel if none active
@@ -513,7 +513,7 @@ function handleKeyboardEvents(e) {
                     if (!sidebar.classList.contains('collapsed')) {
                         sidebar.classList.add('collapsed');
                         const arrow = document.querySelector('#sidebarToggle .arrow-icon');
-                        if (arrow) arrow.textContent = 'â˜°';
+                        if (arrow) arrow.textContent = '☰';
                     }
                 }
             }
@@ -600,7 +600,7 @@ function startHealthCheck() {
         if (activeIndex >= 0 && !isReconnecting) {
             // FIX: the previous HEAD/no-cors check fired false "reconnecting"
             // events on most streaming CDNs. Use the player's own state as the
-            // source of truth instead â€” it knows when the stream actually stalls.
+            // source of truth instead — it knows when the stream actually stalls.
             try {
                 const state = jwPlayerInstance && jwPlayerInstance.getState && jwPlayerInstance.getState();
                 if (state === 'playing' || state === 'buffering' || state === 'paused' || state === 'idle') {
@@ -655,7 +655,7 @@ function showReconnectionMessage(attempt) {
     const fallbackMsg = document.getElementById('fallbackMessage');
     fallbackMsg.innerHTML = `
         <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
-            <div>ðŸ“¡</div>
+            <div>📡</div>
             <div>Reconnecting... #${attempt}</div>
             <div style="font-size: 11px; opacity: 0.8;">Attempting to restore connection</div>
         </div>
@@ -756,7 +756,7 @@ function updateLoadingProgress(percent) {
 // Update loadChannel function to use loading indicator
 // FIX: attach listeners AFTER originalLoadChannel runs, because the underlying
 // loadChannel may call jwplayer().setup() again, which DESTROYS the previous
-// instance â€” any listeners attached beforehand would be lost and the progress
+// instance — any listeners attached beforehand would be lost and the progress
 // indicator would get stuck at 95% forever (black screen + frozen %).
 const originalLoadChannel = loadChannel;
 let __loadProgressInterval = null;
@@ -780,7 +780,7 @@ loadChannel = function(index) {
         updateLoadingProgress(progress);
     }, 100);
 
-    // Trigger the actual channel load FIRST â€” this may rebuild the player
+    // Trigger the actual channel load FIRST — this may rebuild the player
     originalLoadChannel(index);
 
     // Now (re)bind listeners on the CURRENT jwPlayerInstance
@@ -820,7 +820,7 @@ loadChannel = function(index) {
             hideLoading();
         }, 20000);
     } else {
-        // Player wasn't ready â€” drop indicator after a short delay
+        // Player wasn't ready — drop indicator after a short delay
         __loadSafetyTimeout = setTimeout(() => {
             if (__loadProgressInterval) { clearInterval(__loadProgressInterval); __loadProgressInterval = null; }
             hideLoading();
@@ -977,7 +977,7 @@ window.addEventListener('load', () => {
         sidebar.classList.toggle('collapsed');
         // Update toggle button icon
         const arrow = sidebarToggle.querySelector('.arrow-icon');
-        arrow.textContent = sidebar.classList.contains('collapsed') ? 'â˜°' : 'âœ•';
+        arrow.textContent = sidebar.classList.contains('collapsed') ? '☰' : '✕';
     });
 }, { once: true }); // Ensure this runs after startup
 
