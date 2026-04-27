@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const expectedDate = new Date().toISOString().split('T')[0];
     
     if (!signedInDate || signedInDate !== expectedDate) {
-        window.location.href = 'index.html';
+        window.location.href = 'u.html';
         return;
     }
 
