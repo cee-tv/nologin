@@ -1095,7 +1095,7 @@ const channels = [
         url: 'https://ucdn.mediaquest.com.ph/bpk-tv/tv5_hd/default1/index.mpd',
         drm:
         {
-            clearkey: {keyId: '2615129ef2c846a9bbd43a641c7303ef',key: '07c7f996b1734ea288641a68e1cfdc4d',},
+            clearkey: {keyId: '9c3e7a516d824f04a9175b8c2e3d7040',key: '524a9c2cec98272f71c347345a3fd12e',},
         },
     },
     {
