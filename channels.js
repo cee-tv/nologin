@@ -718,10 +718,10 @@ const channels = [
         name: 'ONE SPORTS',
         category: 'Cignal',
         type: 'mpd',
-        url: 'https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_onesports_hd/default/index.mpd',
+        url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_onesports_hd/default/index.mpd',
         drm:
         {
-            clearkey: {keyId: '53c3bf2eba574f639aa21f2d4409ff11',key: '3de28411cf08a64ea935b9578f6d0edd',},
+            clearkey: {keyId: '69f5a2318d744c609b125e3a7d8f2046',key: '182523c0bae912e17e916dd4283280e9',},
         },
     },
     {
@@ -729,10 +729,10 @@ const channels = [
         name: 'ONE SPORTS+',
         category: 'Cignal',
         type: 'mpd',
-        url: 'https://qp-pldt-live-bpk-01-prod.akamaized.net/bpk-tv/cg_onesportsplus_hd1/default/index.mpd',
+        url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_onesportsplus_hd1/default/index.mpd',
         drm:
         {
-            clearkey: {keyId: 'f00bd0122a8a4da1a49ea6c49f7098ad',key: 'a4079f3667ba4c2bcfdeb13e45a6e9c6',},
+            clearkey: {keyId: 'e9c4f7312a854d69b0137f6e8c2a5490',key: '1105fa92173b06885be336b887bc4d26',},
         },
     },
     {
@@ -743,7 +743,7 @@ const channels = [
         url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_pbarush_hd1/default/index.mpd',
         drm:
         {
-            clearkey: {keyId: 'd7f1a9c36b2e4f8d9a441c5e7b2d8f60',key: 'fb83c86f600ab945e7e9afed8376eb1e',},
+            clearkey: {keyId: '91a5e6327c844f09b2186d3a5e7c2041',key: '984beb3aeff3554c1a5acc04d6044e55',},
         },
     },
     {
@@ -1018,7 +1018,7 @@ const channels = [
         url: 'https://ucdn.mediaquest.com.ph/bpk-tv/dr_tapsports/default/index.mpd',
         drm:
         {
-            clearkey: {keyId: 'eabd2d95c89e42f2b0b0b40ce4179ea0',key: '0e7e35a07e2c12822316c0dc4873903f',},
+            clearkey: {keyId: 'a6d4f8912c734b608e159f3a7d5c2046',key: 'ec647e6c500235352a8df03c518e9b23',},
         },
     },
     {
@@ -1150,7 +1150,7 @@ const channels = [
         url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_uaap_cplay_sd/default/index.mpd',
         drm:
         {
-            clearkey: {keyId: '95588338ee37423e99358a6d431324b9',key: '6e0f50a12f36599a55073868f814e81e',},
+            clearkey: {keyId: 'b6c9f4218d734a059e165c3d7a2f8049',key: '948aa5c0d0c15c70efb9257f5b75c379',},
         },
     },
     {
