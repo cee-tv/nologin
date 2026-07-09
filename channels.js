@@ -133,13 +133,13 @@ const channels = [
     },
     {
         number: 15,
-        name: 'TFC NORTH AMERICA',
-        category: 'iWantTFC',
+        name: 'Kapatid',
+        category: 'Cignal',
         type: 'mpd',
-        url: 'https://du44jtt5g7upx.cloudfront.net/out/v1/a3b708325c1d43dc9549c262526a6945/index.mpd',
+        url: 'https://ucdn.mediaquest.com.ph/bpk-tv/kapatid_hd/default/index.mpd',
         drm:
         {
-            clearkey: {keyId: '9c700e42ffc64d9b82d94cf57a2302fa',key: '44d038e1fdcaefb3e75ffb4e42537279',},
+            clearkey: {keyId: '8f7a2c913d6b4e5a9f127c8d4e6a1b90',key: 'a73d3d1211fb23084c62572706f45397',},
         },
     },
     {
@@ -150,7 +150,7 @@ const channels = [
         url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_a2z/default/index.mpd',
         drm:
         {
-            clearkey: {keyId: '3f6d8a2c1b7e4c9f8d52a7e1b0c6f93d',key: '4019f9269b9054a2b9e257b114ebbaf2',},
+            clearkey: {keyId: 'f3a8c9126e544d809b312c7f5a8e6140',key: '43f5361983896b47ff01b4f77c5dbf3f',},
         },
     },
     {
@@ -282,7 +282,7 @@ const channels = [
         url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_buko_sd/default/index.mpd',
         drm:
         {
-            clearkey: {keyId: 'd273c085f2ab4a248e7bfc375229007d',key: '7932354c3a84f7fc1b80efa6bcea0615',},
+            clearkey: {keyId: 'c8b1d5f42a674e93b8016f2d9c7a5e34',key: '168bbf02d7eca252a61a402e25cb33f5',},
         },
     },
     {
@@ -315,7 +315,7 @@ const channels = [
         url: 'https://ucdn.mediaquest.com.ph/bpk-tv/celmovie_pinoy_sd/default/index.mpd',
         drm:
         {
-            clearkey: {keyId: '0f8537d8412b11edb8780242ac120002',key: '2ffd7230416150fd5196fd7ea71c36f3',},
+            clearkey: {keyId: '35f8d6917a424b059e166c3a7d5f8049',key: '76830e1bcb5819f76b7c515e9d65cc31',},
         },
     },
     {
@@ -556,7 +556,7 @@ const channels = [
         url: 'https://ucdn.mediaquest.com.ph/bpk-tv/ibc13_sd_new/default/index.mpd',
         drm:
         {
-            clearkey: {keyId: '16ecd238c0394592b8d3559c06b1faf5',key: '05b47ae3be1368912ebe28f87480fc84',},
+            clearkey: {keyId: 'f4a8d6216c954e709b187d3a5f2c8049',key: '34710df996a4089ee6f7e8deb7f46586',},
         },
     },
     {
@@ -913,13 +913,13 @@ const channels = [
     },
     {
         number: 86,
-        name: 'PTV',
+        name: 'PTV 4',
         category: 'Cignal',
         type: 'mpd',
         url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_ptv4_sd/default/index.mpd',
         drm:
         {
-            clearkey: {keyId: '71a130a851b9484bb47141c8966fb4a3',key: 'ad1f003b4f0b31b75ea4593844435600',},
+            clearkey: {keyId: 'f8c2a6915d744b309e186a3f7c2d8049',key: '1ad3243b38c60312caa6ba11f150c19c',},
         },
     },
     {
@@ -952,7 +952,7 @@ const channels = [
         url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cnn_rptv_prod_hd/default/index.mpd',
         drm:
         {
-            clearkey: {keyId: '1917f4caf2364e6d9b1507326a85ead6',key: 'a1340a251a5aa63a9b0ea5d9d7f67595',},
+            clearkey: {keyId: 'b5d7a6219c434e188f026a3d7c5e9148',key: '28e1244057ff6feae879c1e985ded0fb',},
         },
     },
     {
@@ -1073,7 +1073,7 @@ const channels = [
         url: 'https://ucdn.mediaquest.com.ph/bpk-tv/truefm_tv/default/index.mpd',
         drm:
         {
-            clearkey: {keyId: 'a4e2b9d61c754f3a8d109b6c2f1e7a55',key: '1d8d975f0bc2ed90eda138bd31f173f4',},
+            clearkey: {keyId: 'b5d7a6219c434e188f026a3d7c5e9148',key: '28e1244057ff6feae879c1e985ded0fb',},
         },
     },
     {
@@ -1128,7 +1128,7 @@ const channels = [
         url: 'https://ucdn.mediaquest.com.ph/bpk-tv/cg_tvnmovie/default/index.mpd',
         drm:
         {
-            clearkey: {keyId: '2e53f8d8a5e94bca8f9a1e16ce67df33',key: '3471b2464b5c7b033a03bb8307d9fa35',},
+            clearkey: {keyId: 'e6c9a4215d734f608b197c3e2a5d9048',key: 'ec695ab203cb2258db220b3863e2a7ee',},
         },
     },
     {
